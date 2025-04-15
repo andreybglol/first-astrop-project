@@ -1,0 +1,186 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    overflow: hidden;
+}
+.container {
+    font-size: 6px;
+    width: 40em;
+    height: 40em;
+    position: relative;
+}
+.sun {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 24em;
+    left: 15em;
+    width: 12em;
+    height: 12em;
+    border-radius: 50%;
+    box-shadow: 0 0 3em rgb(255, 128, 0);
+    animation: orbit 50s linear infinite;
+}
+
+.star {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+@keyframes orbit {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+.navlist a:hover{
+    border-bottom: 2px solid black;
+}
+#menu-icon{
+    color: white;
+    font-size: 30px;
+    z-index: 10001;
+    cursor: pointer;
+}
+.hero{
+     height: none;
+    width: 1000x;
+    min-height: 1vh;
+    background: transparent;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;  
+    align-items: center;        
+    gap: 1vh ;
+    
+}
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background: transparent;
+}
+.navlist{
+ display: flex;
+}
+.navlist a{
+    color: white;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+.navlist a:hover{
+    border-bottom: 2px solid black;
+}
+section{
+    padding: 0 19%;
+}
+.hero-text h5{
+    font-size: 14px;
+    font-weight: 400px;
+    color: wheat;
+    margin-bottom: 40px;
+}
+.hero-text h1{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 90px;
+    line-height: 1;
+    color: white;
+    margin: 0 0 45px;
+    
+}
+.hero-text h4{
+    font-size: 18px;
+    font-weight: 600;
+    color: aliceblue;
+    margin-bottom: 10px;
+}
+.hero-text p{
+ color: antiquewhite;
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 40px;
+    white-space: pre-line;
+}
+.hero-img img{
+ width: 700px;
+    
+    
+}
+.hero-text a{
+    display: inline-block;
+    color: beige;
+    background: green;
+    border: 1px solid transparent;
+    padding: 12px 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 30px;
+    text-transform: uppercase; 
+    transition: all .55s ease;
+    
+}
+.hero-text a:hover{
+ background: transparent;
+border: 1px solid white;
+    transform: translate(7px)
+}
+.hero-text a.ctaa{
+    background: transparent;
+    border: 1px solid white;
+    margin-left: 20px;
+}
+.hero-text a.ctaa i{
+    vertical-align: middle;
+    margin-left: 5px;
+}
+down{
+    position: absolute;
+    bottom: 6%;
+    right: 9%;
+}
+.scroll-down i{
+    display: grid;
+    padding: 1px;
+    font-size: 18px;
+    color: white;
+    background: #4d9559;
+    border-radius: 30px;
+    transition: all .50s ease;
+}
+.scroll-down i:hover{
+    transform: translateY(-5px)
+}
+.logo{
+ font-size: 15px;
+    font-weight: 700;
+    color: white;
+}
